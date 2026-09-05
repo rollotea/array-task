@@ -52,8 +52,9 @@ import ast
 #     return result
 
 
-def parse_output(raw_output):
+def parse_output(task_id, raw_output):
     result = {
+        "task_id": task_id,
         "examples": [],
         "query": None,
         "final_answer": None,
